@@ -19,12 +19,10 @@ nav a{
     text-decoration: none;
 }
 
-nav a:hover{
+.current{
     border-bottom: 1px solid aquamarine;
-}
-
-nav a:active{
     color: aquamarine;
+    font-weight: bold;
 }
 
 .banner {
