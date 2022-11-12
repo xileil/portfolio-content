@@ -81,10 +81,6 @@ img:hover {
     }
 }
 
-h1{
-    display: none;
-}
-
 @media (prefers-reduced-motion) {
     #banner{
       animation: none;
