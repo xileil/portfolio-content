@@ -91,6 +91,10 @@ img:hover {
     display: grid;
   }
 
+  main {
+    overflow: hidden;
+  }
+
   footer{
     height: 10vw;
     background-image: url(../img/footer.jpeg);
