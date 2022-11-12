@@ -9,16 +9,20 @@ nav ul{
 }
 
 nav li{
-    margin: 20px;
+    margin: 10px;
 }
 
 nav a{
     position: relative;
-    font-size: 21px;
+    font-size: 19px;
     font-family: 'Amiri', serif;
     font-weight: bold;
     color: white;
     text-decoration: none;
+}
+
+i{
+    float: right;
 }
 
 /* nav a:hover {
@@ -38,7 +42,6 @@ nav a{
 }
 
 
-
 img {
     width: 100%;
     height: 100%;
@@ -54,9 +57,9 @@ img:hover {
 }
 
 .container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     margin: 2px;
 }
 
@@ -86,4 +89,14 @@ h1{
     #banner{
       animation: none;
     }
+  }
+
+  #film_body {
+    display: grid;
+  }
+
+  footer{
+    height: 10vw;
+    background-image: url(../img/footer.jpeg);
+    background-size: cover;
   }
