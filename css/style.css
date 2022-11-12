@@ -9,25 +9,35 @@ nav ul{
 }
 
 nav li{
-    margin: 9px;
+    margin: 20px;
 }
 
 nav a{
-    font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    font-size: 21px;
+    font-family: 'Amiri', serif;
+    font-weight: bold;
     color: white;
     text-decoration: none;
 }
 
-.current{
-    border-bottom: 1px solid aquamarine;
-    color: aquamarine;
-    font-weight: bold;
+/* nav a:hover {
+    animation: jump 3s ease;
 }
 
-.banner {
-    grid-column: 1 / span 2;
+@keyframes jump {
+    0% {bottom: 0}
+    50% {bottom: 8px;}
+    100%{bottom: 0}
+} */
+
+.current{
+    border-bottom: 1px solid aquamarine;
+    font-weight: bold;
+    color: aquamarine;
 }
+
+
 
 img {
     width: 100%;
@@ -36,7 +46,7 @@ img {
     margin: 2px;
     padding: 4px;
     box-sizing: border-box;
-    border: dashed black;
+    border: dashed white;
 }
 
 img:hover {
@@ -49,3 +59,31 @@ img:hover {
     grid-template-rows: auto;
     margin: 2px;
 }
+
+#banner{
+    position: relative;
+    background-image: url("../img/banner.png");
+    width: 100vw;
+    height: 56vw;
+    background-size: contain;
+    animation: flyin 1s ease;
+}
+
+@keyframes flyin {
+    from{
+        right: 1000px;
+    }
+    to{
+        right: 0
+    }
+}
+
+h1{
+    display: none;
+}
+
+@media (prefers-reduced-motion) {
+    #banner{
+      animation: none;
+    }
+  }
