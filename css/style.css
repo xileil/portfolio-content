@@ -205,19 +205,28 @@ h1{
 
   #description{
     padding: 10px;
+    font-family: 'Amiri', serif;
   }
 
   #history{
     padding: 10px;
     padding-top: 40px;
+    font-family: 'Amiri', serif;
+  }
+
+  #welcome{
+    font-family: 'Amiri', serif;
+    padding: 10px;
   }
 
   .articles p{
     padding: 10px;
+    font-family: 'Amiri', serif;
   }
 
   .articles h1{
     padding: 10px;
+    font-family: 'Amiri', serif;
   }
 
   .articles img{
