@@ -24,11 +24,12 @@
 	<title>Home</title>
 </head>
 
-<body>
+<body id="index_body">
+	<div class="skip"><a href="#main">Skip to Main Content</a></div>
 	<header>
 		<nav>
 			<ul>
-				<li><i class="fa-solid fa-video fa-1x"  style="color:aquamarine;"></i></li>
+				<!-- <li><i class="fa-solid fa-video fa-1x"  style="color:aquamarine;"></i></li> -->
 				<li><a class="current" href="index.html"> Home</a></li>
 				<li><a href="film.html"> Film</a></li>
 				<li><a href="awards.html"> Awards</a></li>
@@ -38,45 +39,48 @@
 	</header>
 
 	<main>
-        <figure>
-			<img alt= "wong kar wai" src="img/wongkarwai.jpeg" width="500">
-		</figure>
+		<div class = "wkw">
+			<img id="w1" alt= "wong kar wai" src="img/wongkarwai.jpeg" width="500">
 
-		<h1>About Wong Kar-wai</h1>
+			<img id="w2" alt= "wong kar wai" src="img/wkw-image.jpeg" width="500">
+	
+
+		<div id = 'description'>
+
+		<h1> <i id = "movie" class="fa-solid fa-video fa-1x"></i> About Wong Kar-wai </h1><br>
+
         <p>
             "Wong Kar-wai BBS (born 17 July 1958) is a Hong Kong film director, screenwriter, and producer. His films are characterised by nonlinear narratives, atmospheric music, and vivid cinematography involving bold, saturated colours. A pivotal figure of Hong Kong cinema, Wong is considered a contemporary auteur, and ranks third on Sight & Sound's 2002 poll of the greatest filmmakers of modern times.His films frequently appear on best-of lists domestically and internationally."
-		</p>
+		</p> <br>
 			
 		<p>
 			"Born in Shanghai, Wong emigrated to British Hong Kong as a child with his family. He began a career as a screenwriter for soap operas before transitioning to directing with his debut, the crime drama As Tears Go By (1988). While As Tears Go By was fairly successful in Hong Kong, Wong moved away from the contemporary trend of crime and action movies to embark on more personal filmmaking styles. Days of Being Wild (1990), his first venture into such direction, did not perform well at the box office. It however received critical acclaim, and won Best Film and Best Director at the 1991 Hong Kong Film Awards. His next film, Ashes of Time (1994), was met with mixed reception because of its vague plot and atypical take on the wuxia genre."
-		</p>
+		</p><br>
 		
 		<p>
 			"The production of Ashes of Time was time-consuming and left Wong exhausted; he subsequently directed Chungking Express (1994) with hopes of reconciling with filmmaking.The film, expressing a more lighthearted atmosphere, catapulted Wong to international prominence, and won Best Film and Best Director at the 1995 Hong Kong Film Awards. Wong continued his film success in the neo-noir crime thriller Fallen Angels (1995), which, while initially met by critics with disappointment due to its stylistic influence and intertextuality with its predecessor Chungking Express, has since amassed a major cult following and is often considered to be a cult classic of the "Golden Age"
 			 of Hong Kong cinema, being especially representative of Wong's film-making style. Wong would go on to consolidate his worldwide reputation with the 1997 drama Happy Together, for which he won Best Director at the Cannes Film Festival."
-		</p>
+		</p><br>
 			
 		<p>
-			"The 2000 drama In the Mood for Love, revered for its lush visuals and subtle storytelling, concretely established Wong's trademark filmmaking styles. Among his other work are 2046 (2004) and The Grandmaster (2013), both of which received awards and nominations worldwide."
-			<br><br>Wikimedia Foundation. (2022, September 9). Wong Kar-wai. Wikipedia. Retrieved September 16, 2022, from https://en.wikipedia.org/wiki/Wong_Kar-wai 
+			Wikimedia Foundation. (2022, September 9). Wong Kar-wai. Wikipedia. Retrieved September 16, 2022, from https://en.wikipedia.org/wiki/Wong_Kar-wai 
 		</p>
-        
+		</div>
+		</div>
+
+        <br>
 		<!-- modify this form HTML and place wherever you want your form -->
-		<form
-		action="https://formspree.io/f/xlevoaor"
-		method="POST"
-		>
-		<label>
-		Your email:
-		<input type="email" name="email">
-		</label>
-		<label>
-		Your message:
-		<textarea name="message"></textarea>
-		</label>
-		<!-- your other form fields go here -->
-		<button type="submit">Send</button>
-		</form>
+        <form action="https://formspree.io/f/xeqdpvpe" method="POST">
+
+            <label id="email"> Your email:</label>
+            <input type="email" name="email">
+
+            <label id="message"> Your message: </label>
+            <textarea type="message" name="message"></textarea> 
+
+            <!-- your other form fields go here -->
+            <button id="send" type="submit">Send</button>
+        </form><br>
 	</main>
 
 	<footer>
