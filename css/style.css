@@ -247,7 +247,7 @@ input[type=email], select {
     box-sizing: border-box;
   }
 
-textarea[type=message], select {
+textarea[name=message], select {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
