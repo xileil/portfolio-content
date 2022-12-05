@@ -1,15 +1,15 @@
-let fig = document.getElementById("culturefig");
+let fig = document.getElementById("funfact");
 
-let figButton = document.getElementById("fig_button");
-figButton.addEventListener("click", figHide);
+let factButton = document.getElementById("fact_button");
+factButton.addEventListener("click", hideFact);
 
-function figHide(){
-    if(figButton.innerText == "Hide Figcaption"){
+function hideFact(){
+    if(factButton.innerText == "Interesting!"){
         fig.style.display = "none";
-        figButton.innerHTML = "Enable Figcaption";
+        factButton.innerText = "See Again";
     }
-    else if(figButton.innerText == "Enable Figcaption"){
+    else {
         fig.style.display = "block";
-        figButton.innerText = "Hide Figcaption";
+        factButton.innerText = "Interesting!";
     }
 }

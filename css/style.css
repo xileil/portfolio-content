@@ -150,7 +150,7 @@ h1{
     font-size: 15px;
   }
 
-  #fig_button{
+  #fact_button{
     background-color: aquamarine;
     padding: 14px;
     margin: 8px 0 8px 10px;
@@ -413,7 +413,7 @@ button[type=submit] {
         grid-row: 1 / span 1;
         justify-self: start;
         margin-left: 150px;
-        margin-top: 120px;
+        margin-top: 100px;
       }
     
     #a2{
@@ -421,7 +421,7 @@ button[type=submit] {
         grid-row: 2 / span 1;
         justify-self: start;
         margin-left: 150px;
-        margin-top: 40px;
+        margin-top: 30px;
       }
 
     #history{
