@@ -7,8 +7,6 @@
     z-index: 1;
     position: absolute;
     top: -40px;
-    /*Your code here - position relative to the parent */
-    /*Your code here - place 500px left and 40px higher */;
   }
 
   .skip a:focus{
@@ -50,22 +48,11 @@ i{
     float: right;
 }
 
-/* nav a:hover {
-    animation: jump 3s ease;
-}
-
-@keyframes jump {
-    0% {bottom: 0}
-    50% {bottom: 8px;}
-    100%{bottom: 0}
-} */
-
 .current{
     border-bottom: 1px solid aquamarine;
     font-weight: bold;
     color: aquamarine;
 }
-
 
 img {
     /* width: 100%;
@@ -101,19 +88,6 @@ img:hover {
 h1{
     font-size: 20px;
     font-weight:bold;
-}
-
-.awards figure{
-    padding: 0 10px 20px 40px;
-}
-
-.a1 figcaption{
-    padding-left: 180px;
-}
-
-.a2 figcaption{
-    padding-left: 250px;
-    padding-bottom: 10px;
 }
 
 @keyframes flyin {
@@ -157,16 +131,41 @@ h1{
     width: 300px;
   }
 
-  #w1{
+  .wkw1{
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
     justify-self: center;
+    padding-left: 10px;
   }
 
-  #w2{
+  .wkw2{
     grid-column: 1 / span 1;
     grid-row: 2 / span 1;
     justify-self: center;
+    padding-left: 10px;
+  }
+
+  .wkw2 figcaption{
+    padding-left: 10px;
+    font-size: 15px;
+  }
+
+  #fig_button{
+    background-color: aquamarine;
+    padding: 14px;
+    margin: 8px 0 8px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Amiri', sans-serif;
+    font-size: 15px;
+
+}
+
+  #description{
+    padding: 110px 10px;
+    font-family: 'Amiri', serif;
+    font-size: 18px;
   }
 
   .awards{
@@ -177,6 +176,14 @@ h1{
 
   .awards img{
     width: 300px;
+  }
+
+  .awards figure{
+    padding: 0 10px 20px 40px;
+  }
+
+  .awards figcaption{
+      padding-left: 10px;
   }
 
   #a1{
@@ -191,6 +198,13 @@ h1{
     justify-self: center;
   }
 
+  #history{
+    padding: 10px;
+    padding-top: 40px;
+    font-family: 'Amiri', serif;
+    font-size: 18px;
+  }
+
   .articles{
     display: grid;
   }
@@ -199,17 +213,6 @@ h1{
     height: 10vw;
     background-image: url(../img/footer.jpeg);
     background-size: cover;
-  }
-
-  #description{
-    padding: 10px;
-    font-family: 'Amiri', serif;
-  }
-
-  #history{
-    padding: 10px;
-    padding-top: 40px;
-    font-family: 'Amiri', serif;
   }
 
   #welcome{
@@ -231,7 +234,7 @@ h1{
     max-width: 100% ;
   }
 
-  form{
+form{
     margin: 20px;
     border-radius: 5px;
     background-color: #f2f2f2;
@@ -289,18 +292,20 @@ button[type=submit] {
     font-size: 15px;
   }
 
+
+
   @media screen and (min-width: 768px){
     .wkw{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 450px 1fr;
     }
-    #w1{
+    .wkw1{
         grid-column: 1 / span 1;
         grid-row: 1 / span 1;
         justify-self: center;
       }
     
-    #w2{
+    .wkw2{
         grid-column: 2 / span 1;
         grid-row: 1 / span 1;
         justify-self: center;
@@ -368,8 +373,6 @@ button[type=submit] {
       #movie{
         display: none;
       }
-
-    
   }
 
 
@@ -379,15 +382,15 @@ button[type=submit] {
         grid-template-columns: 500px 1fr;
         grid-template-rows: 1fr 1fr;
     }
-    #w1{
+    .wkw1{
         grid-column: 1 / span 1;
         grid-row: 1 / span 1;
         justify-self: end;
         margin-right: 40px;
-        margin-top: 30px;
+        margin-top: 50px;
       }
     
-    #w2{
+    .wkw2{
         grid-column: 1 / span 1;
         grid-row: 2 / span 1;
         justify-self: end;
@@ -398,7 +401,7 @@ button[type=submit] {
         grid-column: 2 / span 1;
         grid-row: 1 / span 2;
         padding-right: 100px;
-        margin-top: 30px;
+        margin-top: 20px;
     }
 
     .awards{
@@ -410,7 +413,7 @@ button[type=submit] {
         grid-row: 1 / span 1;
         justify-self: start;
         margin-left: 150px;
-        margin-top: 70px;
+        margin-top: 120px;
       }
     
     #a2{
@@ -418,14 +421,16 @@ button[type=submit] {
         grid-row: 2 / span 1;
         justify-self: start;
         margin-left: 150px;
-        margin-top: 15px;
+        margin-top: 40px;
       }
 
     #history{
         grid-column: 2 / span 1;
         grid-row: 1 / span 2;
-        padding-right: 100px;
+        padding-right: 60px;
         margin-top: 5px;
+        margin-right: 10px;
+        padding-left: 30px;
     }
 
     .articles{
