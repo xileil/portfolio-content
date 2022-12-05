@@ -168,6 +168,11 @@ h1{
     font-size: 18px;
   }
 
+  #movieintro{
+    padding: 10px;
+    font-family:'Amiri', serif;
+  }
+
   .awards{
     display: grid;
     grid-template-columns: 1fr;
