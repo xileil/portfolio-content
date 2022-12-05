@@ -6,7 +6,7 @@ factButton.addEventListener("click", hideFact);
 function hideFact(){
     if(factButton.innerText == "Interesting!"){
         fig.style.display = "none";
-        factButton.innerText = "See Again";
+        factButton.innerText = "Show Again";
     }
     else {
         fig.style.display = "block";
